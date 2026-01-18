@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Here! - My Bakery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-black min-h-screen">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/30 backdrop-blur-lg border-b border-white/20 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16 text-gray-800">
+     
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-xl font-bold text-black shadow">
+              <img src="image/logo.webp" alt="Logo" class="w-10 h-10 rounded-full">
+            </div>
+            <span class="text-xl font-semibold">My Website</span>
+          </div>
+
+          <!-- Menu -->
+          <nav class="flex space-x-7 text-sm font-medium">
+            <a href="index.html#home" class="hover:underline">Home</a>
+            <a href="Page 2.html#menu" class="hover:underline">Menu</a>
+            <a href="page 3.html#about" class="hover:underline">About Us</a>
+            <a href="#contact" class="hover:underline">Order Here!</a>
+          </nav>
+        </div>
+      </div>
+  </header>
+
+  <!-- Section 4: Order Here! -->
+  <section id="contact" class="relative min-h-screen py-20 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('image/background_4.png');">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-white">Order Here!</h2>
+
+    <form class="space-y-8 bg-white p-8 rounded-xl shadow-md border border-gray-200 max-w-2xl mx-auto">
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Nama :</label>
+        <input 
+          type="text" 
+          name="nama"
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+          placeholder="Masukkan nama Anda"
+          required
+        >
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Email :</label>
+        <input 
+          type="email" 
+          name="email"
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+          placeholder="Masukkan email Anda"
+          required
+        >
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Pilih Kue :</label>
+        <select 
+          name="kue"
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+          required
+        >
+          <option value="">Pilih kue</option>
+          <option value="cheese-cake">Cheese Cake</option>
+          <option value="matcha-cake">Matcha Cake</option>
+          <option value="fudgy-brownies">Fudgy Brownies</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Jumlah :</label>
+        <input 
+          type="number" 
+          name="jumlah"
+          min="1"
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+          placeholder="Masukkan jumlah"
+          required
+        >
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Tanggal Pembelian :</label>
+        <input 
+          type="date" 
+          name="tanggal"
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition"
+          required
+        >
+      </div>
+
+      <div>
+        <label class="block mb-2 font-medium text-gray-700">Tambahkan Catatan :</label>
+        <textarea 
+          name="catatan"
+          rows="4" 
+          class="w-full border border-gray-400 px-4 py-3 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition resize-none"
+          placeholder="Tulis catatan khusus jika ada..."
+        ></textarea>
+      </div>
+
+      <button 
+        type="submit" 
+        class="w-full bg-amber-700 text-white py-3 rounded-lg font-medium hover:bg-amber-800 transition duration-300 shadow-md"
+      >
+        Pesan Sekarang
+      </button>
+    </form>
+  </div>
+</section>
+  <!-- Footer sederhana -->
+  <footer class="border-t border-gray-300 py-6 text-center text-sm text-gray-600">
+    Created By Haical ©2026
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

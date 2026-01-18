@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - My Bakery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-black min-h-screen">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/30 backdrop-blur-lg border-b border-white/20 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16 text-gray-800">
+     
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-xl font-bold text-black shadow">
+              <img src="image/logo.webp" alt="Logo" class="w-10 h-10 rounded-full">
+            </div>
+            <span class="text-xl font-semibold">My Website</span>
+          </div>
+
+          <!-- Menu -->
+          <nav class="flex space-x-7 text-sm font-medium">
+            <a href="index.html#home" class="hover:underline">Home</a>
+            <a href="#menu" class="hover:underline">Menu</a>
+            <a href="page 3.html#about" class="hover:underline">About Us</a>
+            <a href="page 4.html#contact" class="hover:underline">Order Here!</a>
+          </nav>
+        </div>
+      </div>
+  </header>
+</section>
+
+  <!-- Section 2: Our Headquarter -->
+  <section id="menu" class="relative min-h-screen py-20 px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('image/background_2.jpg');">
+  <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <h1 class="text-4xl md:text-7xl font-bold text-white drop-shadow-2xl mb-6">Best Seller!</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- Cheesecake -->
+      <div class="text-center">
+        <div class="w-50 h-50 mx-auto mb-6 rounded-full border-4 border-white overflow-hidden flex items-center justify-center">
+          <img 
+            src="image/classic-strawberry-cheesecake.webp" 
+            alt="Cheese Cake" 
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <h3 class="text-3xl font-semibold text-white">Cheese Cake</h3>
+        <p class="text-white mt-2">Classic creamy vanilla with fresh strawberries</p>
+      </div>
+
+        <div class="text-center">
+          <div class="w-50 h-50 mx-auto mb-6 rounded-full border-4 border-white overflow-hidden flex items-center justify-center">
+            <img 
+              src="image/matcha-cake.jpg" 
+              alt="Matcha Cake" 
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <h3 class="text-3xl font-semibold text-white">Matcha Cake</h3>
+          <p class="text-white mt-2">Smooth green tea flavor with delicate matcha frosting</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-50 h-50 mx-auto mb-6 rounded-full border-4 border-white overflow-hidden flex items-center justify-center">
+            <img 
+              src="image/fudgy-brownies.jpg" 
+              alt="Fudgy Brownies" 
+              class="w-full h-64 object-cover"
+            />
+          </div>
+          <h3 class="text-3xl font-semibold text-white">Fudgy Brownies</h3>
+          <p class="text-white mt-2">Rich and gooey chocolate brownies with walnuts</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-black min-h-screen">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/30 backdrop-blur-lg border-b border-white/20 shadow-lg">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16 text-gray-800">
+   
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-xl font-bold text-black shadow">
+            <img src="image/logo.webp" alt="Logo" class="w-10 h-10 rounded-full">
+          </div>
+          <span class="text-xl font-semibold">My Website</span>
+        </div>
+
+        <!-- Menu -->
+        <nav class="flex space-x-7 text-sm font-medium">
+          <a href="index.html#home" class="hover:underline">Home</a>
+          <a href="Page 2.html#menu" class="hover:underline">Menu</a>
+          <a href="page 3.html#about" class="hover:underline">About Us</a>
+          <a href="page 4.html#contact" class="hover:underline">Order Here!</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Home / Welcome -->
+  <section id="home" class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
+     style="background-image: url('image/background_1.jpg');">               
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 max-w-4xl px-6 pt-16">
+      <h1 class="text-5xl md:text-7xl font-bold text-white drop-shadow-2xl mb-6">
+        Hi!, Welcome To My Bakery
+      </h1>
+      <p class="text-xl md:text-2xl text-white drop-shadow-lg mb-10">
+        Ini adalah website latihan pertama – Nikmati kue fresh setiap hari!
+      </p>
+      <a href="Page 2.html" class="inline-block bg-amber-500 text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-amber-600 transition shadow-xl">
+        Lihat Produk Kami →
+      </a>
+</div>
+</section>
+
+</body>
+</html>
